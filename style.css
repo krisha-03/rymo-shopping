@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+button:hover{
+    background-color: #63605d;
+}
+
+hr {
+  width: 60px;
+  height: 2px;
+  background-color: #fb774b;
+}
+
+.navbar {
+    font-size: 16px;  
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i.active {
+    color: coral;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 5000;
+    transition: 0.3s ease;
+}
+
+#navbarSupportedContent a.active{
+    color: coral;
+}
+#navbarSupportedContent i.active{
+    color: coral;
+}
+
+#home{
+    background-image: url(image/back.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: coral;
+}
+
+#brand img{
+    transition: 0.3s ease-in-out;
+}
+#brand img:hover{
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+#new .one img{
+    width: 100%;
+    height: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgb(245, 178, 178, 0.7);
+}
+
+#new .one .details button{
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+
+#new .one .details button:hover{
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+#featured img{
+    height: 60%;
+    width: 100%;
+    transition: 0.3s all;
+}
+#clothes img{
+    height: 60%;
+    width: 100%;
+    transition: 0.3s all;
+}
+
+.product:hover  img{
+    opacity: 0.4;
+}
+
+.product .buy-but{
+    background-color: coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    text-decoration: none;
+}
+
+.product:hover .buy-but{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sart{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+#banner{
+    background-image: url(image/banner/2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h4{
+    color:#d8d8d8
+}
+
+#banner h1{
+    color: #fff;
+}
+
+#banner button{
+    text-decoration: none;
+    background-color: #fb774b;
+}
+
+.cl-wt-img{
+    height: 338px;
+    width: 300px;
+}
+
+footer{
+    background-color: #222222;
+}
+footer p{
+    color: white;
+    font-size: 0.8rem;
+}
+footer h5{
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #f1efef;
+}
+footer li a:hover{
+    font-size: 0.8rem;
+    color: #d8d8d8;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.add-to-cart button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: coral;
+    color: white;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateY(20px);
+    opacity: 0.4;
+    transition: 0.3s all;
+}
+.add-to-cart button:hover{
+    background-color: #63605d;
+}
+.close-popup button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #ebd8f3;
+    color: rgb(0, 0, 0);
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.close-popup button:hover{
+    background-color: #63605d;
+}
